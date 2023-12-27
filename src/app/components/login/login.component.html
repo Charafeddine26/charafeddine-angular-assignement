@@ -1,0 +1,22 @@
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="username">Username:</label>
+      <input type="text" formControlName="username">
+      <div *ngIf="loginForm.get('username')?.errors?.['required']">
+        Username is required.
+      </div>
+    </div>
+  
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" formControlName="password">
+      <div *ngIf="loginForm.get('password')?.errors?.['required']">
+        Password is required.
+      </div>
+    </div>
+  <!-- We should disable the button if the fields are not field -->
+    <button type="submit" [disabled]="!loginForm.valid" >Login</button>
+    
+    
+  </form>
+  

@@ -1,0 +1,31 @@
+<div class="ticket-dashboard-container">
+    <h2>Tickets Overview</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Priority</th>
+          <th>Type</th>
+          <th>Status</th>
+          <th>Date Submitted</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let ticket of tickets">
+          <td>{{ ticket.id }}</td>
+          <td>{{ ticket.title }}</td>
+          <td>{{ ticket.priority }}</td>
+          <td>{{ ticket.type }}</td>
+          <td>{{ ticket.status }}</td>
+          <td>{{ ticket.date | date }}</td>
+          <td>
+            <!-- Add buttons or links for actions like view details -->
+            <button (click)="viewTicketDetails(ticket.id)">View Details</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

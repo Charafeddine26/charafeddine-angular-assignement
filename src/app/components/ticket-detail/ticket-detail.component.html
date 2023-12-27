@@ -1,0 +1,14 @@
+<div class="ticket-detail-container">
+    <h2>Ticket Details: {{ ticket?.title }}</h2>
+    <p><strong>ID:</strong> {{ ticket?.id }}</p>
+    <p><strong>Description:</strong> {{ ticket?.description }}</p>
+    <p><strong>Priority:</strong> {{ ticket?.priority }}</p>
+    <p><strong>Type:</strong> {{ ticket?.type }}</p>
+    <p><strong>Status:</strong> {{ ticket?.status }}</p>
+    <p><strong>Date Submitted:</strong> {{ ticket?.date | date }}</p>
+    <!-- Add more fields as necessary -->
+  
+    <!-- Back Button -->
+    <button (click)="goBack()">Back to Dashboard</button>
+  </div>
+  

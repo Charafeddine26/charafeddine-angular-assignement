@@ -1,0 +1,16 @@
+.ticket-detail-container {
+    padding: 20px;
+  }
+  
+  .ticket-detail-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .ticket-detail-container p {
+    margin-bottom: 10px;
+  }
+  
+  button {
+    /* Your button styling */
+  }
+  
